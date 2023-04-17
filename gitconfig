@@ -105,6 +105,8 @@
 
 [user]
 	useConfigOnly = true
+	email = 1614545312@qq.com
+	name = ksd1
 
 [http]
 	cookieFile = ~/.gitcookies

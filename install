@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# 错误时立即退出
 set -e
 
 CONFIG=".install.conf.yaml"
