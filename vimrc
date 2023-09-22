@@ -13,6 +13,9 @@ augroup CursorLineOnlyInActiveWindow
     autocmd WinLeave * setlocal nocursorline
 augroup END
 
+" 默认打开NERDTree浏览文件
+" autocmd vimenter * NERDTree
+
 " vim can autodetect this based on $TERM (e.g. 'xterm-256color')
 " but it can be set to force 256 colors
 " set t_Co=256
