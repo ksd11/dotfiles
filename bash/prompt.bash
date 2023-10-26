@@ -16,7 +16,7 @@ machine_name() {
     fi
 }
 
-function git_branch {
+git_branch() {
     # 如果没有git直接退出
     type git > /dev/null 2>&1
     if [[ $? -ne 0 ]]; then
