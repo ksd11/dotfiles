@@ -262,3 +262,15 @@
 [submodule "emacs.d/vendor/company-quickhelp"]
 	path = emacs.d/vendor/company-quickhelp
 	url = https://github.com/company-mode/company-quickhelp
+[submodule "vim/pack/vendor/start/tagbar"]
+	path = vim/pack/vendor/start/tagbar
+	url = https://github.com/preservim/tagbar.git
+[submodule "vim/pack/vendor/start/vim-airline"]
+	path = vim/pack/vendor/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/pack/vendor/start/vim-airline-themes"]
+	path = vim/pack/vendor/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/pack/vendor/start/YouCompleteMe"]
+	path = vim/pack/vendor/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git

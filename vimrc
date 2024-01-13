@@ -16,28 +16,34 @@ set showmatch " show matching braces when text indicator is over them
 " 默认打开NERDTree浏览文件
 " autocmd vimenter * NERDTree
 
+set t_Co=256
+colorscheme desert
+" let g:airline_theme="molokai"
+let g:airline#extensions#tabline#enabled = 1
+nnoremap <Leader>[ :bn<CR>
+nnoremap <Leader>] :bp<CR>
+" let g:airline_theme='google_dark'
 " vim can autodetect this based on $TERM (e.g. 'xterm-256color')
 " but it can be set to force 256 colors
-" set t_Co=256
-if has('gui_running')
-    colorscheme solarized
-    let g:lightline = {'colorscheme': 'solarized'}
-elseif &t_Co < 256
-    colorscheme default
-    set nocursorline " looks bad in this mode
-else
-    set background=dark
-    let g:solarized_termcolors=256 " instead of 16 color with mapping in terminal
-    colorscheme solarized
-    " customized colors
-    highlight SignColumn ctermbg=234
-    highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
-    highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
-    let g:lightline = {'colorscheme': 'dark'}
-    highlight SpellBad cterm=underline
-    " patches
-    highlight CursorLineNr cterm=NONE
-endif
+"if has('gui_running')
+"    colorscheme solarized
+"    let g:lightline = {'colorscheme': 'solarized'}
+"elseif &t_Co < 256
+"    colorscheme default
+"    set nocursorline " looks bad in this mode
+"else
+"    set background=dark
+"    let g:solarized_termcolors=256 " instead of 16 color with mapping in terminal
+"    colorscheme solarized
+"    " customized colors
+"    highlight SignColumn ctermbg=234
+"    highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
+"    highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
+"    let g:lightline = {'colorscheme': 'dark'}
+"    highlight SpellBad cterm=underline
+"    " patches
+"    highlight CursorLineNr cterm=NONE
+"endif
 
 filetype plugin indent on " enable file type detection
 set autoindent
@@ -47,7 +53,7 @@ set autoindent
 "---------------------
 set shortmess+=I " disable startup message
 set nu " number lines
-set rnu " relative line numbering
+" set rnu " relative line numbering
 set incsearch " incremental search (as string is being typed)
 set hls " highlight search
 set listchars=tab:>>,nbsp:~ " set list to see tabs and non-breakable spaces
@@ -222,9 +228,6 @@ set tags^=.git/tags;~
 set termencoding=utf-8
 set encoding=utf8
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
-
-set tabstop=4
-set shiftwidth=4
 
 "---------------------
 " Local customizations
